@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -X POST -H "Content-Type: application/json" --data "$DATA" ${DISCORD_WEBHOOK/$PLACEHOLDER_KEY/$PLACEHOLDER_VALUE}
+curl -X POST -H "Content-Type: application/json" --data "${DATA/$PLACEHOLDER_KEY/$PLACEHOLDER_VALUE}" $DISCORD_WEBHOOK
